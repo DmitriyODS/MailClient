@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/MailClient.dir/main.cpp.o CMakeFiles/MailClient.dir/Libraries/MyString/MyString.cpp.o CMakeFiles/MailClient.dir/Models/User/User.cpp.o CMakeFiles/MailClient.dir/Libraries/MyString/IteratorMyString.cpp.o  -o MailClient.exe -Wl,--out-implib,libMailClient.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/osipo/Projects/MailClient/Libraries/MyString/IteratorMyString.h
+
+/cygdrive/c/Users/osipo/Projects/MailClient/Libraries/MyString/MyString.h
+iostream
+-
+cstring
+-
+./IteratorMyString.h
+/cygdrive/c/Users/osipo/Projects/MailClient/Libraries/MyString/IteratorMyString.h
+
+/cygdrive/c/Users/osipo/Projects/MailClient/main.cpp
+iostream
+-
+cstring
+-
+./Libraries/MyString/MyString.h
+/cygdrive/c/Users/osipo/Projects/MailClient/Libraries/MyString/MyString.h
+
