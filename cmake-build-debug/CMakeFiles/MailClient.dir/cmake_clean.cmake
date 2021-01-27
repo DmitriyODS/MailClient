@@ -1,4 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.o"
+  "CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.o"
+  "CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.o"
   "CMakeFiles/MailClient.dir/Libraries/MyString/IteratorMyString.cpp.o"
   "CMakeFiles/MailClient.dir/Libraries/MyString/MyString.cpp.o"
   "CMakeFiles/MailClient.dir/Models/User/User.cpp.o"

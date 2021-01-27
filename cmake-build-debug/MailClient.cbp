@@ -80,6 +80,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/ItemMenu.cpp">
+			<Option target="MailClient"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/ItemMenu.h">
+			<Option target="MailClient"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/IteratorMenu.cpp">
+			<Option target="MailClient"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/IteratorMenu.h">
+			<Option target="MailClient"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/Menu.cpp">
+			<Option target="MailClient"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/Menu.h">
+			<Option target="MailClient"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/osipo/Projects/MailClient/Libraries/MyString/IteratorMyString.cpp">
 			<Option target="MailClient"/>
 		</Unit>

@@ -121,6 +121,15 @@ namespace ODS {
         // метод удаления символов с конца строки
         MyString &operator-=(size_t count);
 
+        // метод присваивания строки
+        MyString &operator=(const MyString &str);
+
+        // метод присваивания C - строки
+        MyString &operator=(const char *c_str);
+
+        // метод присваивания символа
+        MyString &operator=(char symbol);
+
         // метод удаления символов с конца строки
         MyString &operator--();
 

@@ -158,7 +158,6 @@ namespace ODS {
 
         if (m_len < 1) {
             erase();
-            _initString();
 
             return *this;
         }
@@ -184,7 +183,6 @@ namespace ODS {
 
         if (m_len < 1) {
             erase();
-            _initString();
 
             return *this;
         }
@@ -277,5 +275,30 @@ namespace ODS {
 
     MyString::iterator MyString::begin() {
         return iterator(m_string);
+    }
+
+    MyString &MyString::operator=(const MyString &str) {
+        if (&str == this) {
+            return *this;
+        }
+
+        erase();
+        addString(str.m_string);
+
+        return *this;
+    }
+
+    MyString &MyString::operator=(const char *c_str) {
+        erase();
+        addString(c_str);
+
+        return *this;
+    }
+
+    MyString &MyString::operator=(char symbol) {
+        erase();
+        addSymbol(symbol);
+
+        return *this;
     }
 }

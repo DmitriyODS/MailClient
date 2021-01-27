@@ -143,6 +143,87 @@ MailClient/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MailClient.dir/build.make CMakeFiles/MailClient.dir/build
 .PHONY : MailClient/fast
 
+Libraries/Menu/ItemMenu.o: Libraries/Menu/ItemMenu.cpp.o
+
+.PHONY : Libraries/Menu/ItemMenu.o
+
+# target to build an object file
+Libraries/Menu/ItemMenu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MailClient.dir/build.make CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.o
+.PHONY : Libraries/Menu/ItemMenu.cpp.o
+
+Libraries/Menu/ItemMenu.i: Libraries/Menu/ItemMenu.cpp.i
+
+.PHONY : Libraries/Menu/ItemMenu.i
+
+# target to preprocess a source file
+Libraries/Menu/ItemMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MailClient.dir/build.make CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.i
+.PHONY : Libraries/Menu/ItemMenu.cpp.i
+
+Libraries/Menu/ItemMenu.s: Libraries/Menu/ItemMenu.cpp.s
+
+.PHONY : Libraries/Menu/ItemMenu.s
+
+# target to generate assembly for a file
+Libraries/Menu/ItemMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MailClient.dir/build.make CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.s
+.PHONY : Libraries/Menu/ItemMenu.cpp.s
+
+Libraries/Menu/IteratorMenu.o: Libraries/Menu/IteratorMenu.cpp.o
+
+.PHONY : Libraries/Menu/IteratorMenu.o
+
+# target to build an object file
+Libraries/Menu/IteratorMenu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MailClient.dir/build.make CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.o
+.PHONY : Libraries/Menu/IteratorMenu.cpp.o
+
+Libraries/Menu/IteratorMenu.i: Libraries/Menu/IteratorMenu.cpp.i
+
+.PHONY : Libraries/Menu/IteratorMenu.i
+
+# target to preprocess a source file
+Libraries/Menu/IteratorMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MailClient.dir/build.make CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.i
+.PHONY : Libraries/Menu/IteratorMenu.cpp.i
+
+Libraries/Menu/IteratorMenu.s: Libraries/Menu/IteratorMenu.cpp.s
+
+.PHONY : Libraries/Menu/IteratorMenu.s
+
+# target to generate assembly for a file
+Libraries/Menu/IteratorMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MailClient.dir/build.make CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.s
+.PHONY : Libraries/Menu/IteratorMenu.cpp.s
+
+Libraries/Menu/Menu.o: Libraries/Menu/Menu.cpp.o
+
+.PHONY : Libraries/Menu/Menu.o
+
+# target to build an object file
+Libraries/Menu/Menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MailClient.dir/build.make CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.o
+.PHONY : Libraries/Menu/Menu.cpp.o
+
+Libraries/Menu/Menu.i: Libraries/Menu/Menu.cpp.i
+
+.PHONY : Libraries/Menu/Menu.i
+
+# target to preprocess a source file
+Libraries/Menu/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MailClient.dir/build.make CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.i
+.PHONY : Libraries/Menu/Menu.cpp.i
+
+Libraries/Menu/Menu.s: Libraries/Menu/Menu.cpp.s
+
+.PHONY : Libraries/Menu/Menu.s
+
+# target to generate assembly for a file
+Libraries/Menu/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MailClient.dir/build.make CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.s
+.PHONY : Libraries/Menu/Menu.cpp.s
+
 Libraries/MyString/IteratorMyString.o: Libraries/MyString/IteratorMyString.cpp.o
 
 .PHONY : Libraries/MyString/IteratorMyString.o
@@ -260,6 +341,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MailClient"
+	@echo "... Libraries/Menu/ItemMenu.o"
+	@echo "... Libraries/Menu/ItemMenu.i"
+	@echo "... Libraries/Menu/ItemMenu.s"
+	@echo "... Libraries/Menu/IteratorMenu.o"
+	@echo "... Libraries/Menu/IteratorMenu.i"
+	@echo "... Libraries/Menu/IteratorMenu.s"
+	@echo "... Libraries/Menu/Menu.o"
+	@echo "... Libraries/Menu/Menu.i"
+	@echo "... Libraries/Menu/Menu.s"
 	@echo "... Libraries/MyString/IteratorMyString.o"
 	@echo "... Libraries/MyString/IteratorMyString.i"
 	@echo "... Libraries/MyString/IteratorMyString.s"

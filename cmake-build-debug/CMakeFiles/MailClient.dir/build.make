@@ -129,12 +129,54 @@ CMakeFiles/MailClient.dir/Libraries/MyString/IteratorMyString.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MailClient.dir/Libraries/MyString/IteratorMyString.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/osipo/Projects/MailClient/Libraries/MyString/IteratorMyString.cpp -o CMakeFiles/MailClient.dir/Libraries/MyString/IteratorMyString.cpp.s
 
+CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.o: CMakeFiles/MailClient.dir/flags.make
+CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.o: ../Libraries/Menu/Menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/osipo/Projects/MailClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.o -c /cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/Menu.cpp
+
+CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/Menu.cpp > CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.i
+
+CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/Menu.cpp -o CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.s
+
+CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.o: CMakeFiles/MailClient.dir/flags.make
+CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.o: ../Libraries/Menu/ItemMenu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/osipo/Projects/MailClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.o -c /cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/ItemMenu.cpp
+
+CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/ItemMenu.cpp > CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.i
+
+CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/ItemMenu.cpp -o CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.s
+
+CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.o: CMakeFiles/MailClient.dir/flags.make
+CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.o: ../Libraries/Menu/IteratorMenu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/osipo/Projects/MailClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.o -c /cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/IteratorMenu.cpp
+
+CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/IteratorMenu.cpp > CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.i
+
+CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/osipo/Projects/MailClient/Libraries/Menu/IteratorMenu.cpp -o CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.s
+
 # Object files for target MailClient
 MailClient_OBJECTS = \
 "CMakeFiles/MailClient.dir/main.cpp.o" \
 "CMakeFiles/MailClient.dir/Libraries/MyString/MyString.cpp.o" \
 "CMakeFiles/MailClient.dir/Models/User/User.cpp.o" \
-"CMakeFiles/MailClient.dir/Libraries/MyString/IteratorMyString.cpp.o"
+"CMakeFiles/MailClient.dir/Libraries/MyString/IteratorMyString.cpp.o" \
+"CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.o" \
+"CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.o" \
+"CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.o"
 
 # External object files for target MailClient
 MailClient_EXTERNAL_OBJECTS =
@@ -143,9 +185,12 @@ MailClient.exe: CMakeFiles/MailClient.dir/main.cpp.o
 MailClient.exe: CMakeFiles/MailClient.dir/Libraries/MyString/MyString.cpp.o
 MailClient.exe: CMakeFiles/MailClient.dir/Models/User/User.cpp.o
 MailClient.exe: CMakeFiles/MailClient.dir/Libraries/MyString/IteratorMyString.cpp.o
+MailClient.exe: CMakeFiles/MailClient.dir/Libraries/Menu/Menu.cpp.o
+MailClient.exe: CMakeFiles/MailClient.dir/Libraries/Menu/ItemMenu.cpp.o
+MailClient.exe: CMakeFiles/MailClient.dir/Libraries/Menu/IteratorMenu.cpp.o
 MailClient.exe: CMakeFiles/MailClient.dir/build.make
 MailClient.exe: CMakeFiles/MailClient.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/osipo/Projects/MailClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable MailClient.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/osipo/Projects/MailClient/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable MailClient.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MailClient.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
