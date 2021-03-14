@@ -4,19 +4,17 @@
 #include <ctime>
 #include <string>
 
-#include "../globals/itemsID.h"
-
-enum class LevelLog {
-    information,
-    debag,
-    warning,
-    error,
-    criticalError
+enum class LevelLog : const id_t{
+        information,
+        debag,
+        warning,
+        error,
+        criticalError
 };
 
 
-Id generateId();
+id_t generateId();
 
-void logger(const std::string& text, LevelLog level_log = LevelLog::information);
+void logger(const std::string &text, LevelLog level_log = LevelLog::information);
 
 #endif //LR2_TOOLS_H

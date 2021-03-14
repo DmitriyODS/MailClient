@@ -3,8 +3,8 @@
 #include "./tools.h"
 
 
-Id generateId() {
-    return static_cast<Id>(time(nullptr));
+id_t generateId() {
+    return static_cast<id_t>(time(nullptr));
 }
 
 void logger(const std::string &text, LevelLog level_log) {

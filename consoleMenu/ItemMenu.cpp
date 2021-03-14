@@ -4,7 +4,7 @@
 #include "ItemMenu.h"
 
 
-ItemMenu::ItemMenu(Id id, Id access_level, string title, ItemMenu::PerformedFunc exe_func)
+ItemMenu::ItemMenu(id_t id, ACCESS_LEVEL access_level, string title, ItemMenu::PerformedFunc exe_func)
         : m_id(id), m_access_level(access_level), m_title(std::move(title)), m_exe_func(exe_func) {
     if (m_title.empty()) {
         m_title = "Title item";
@@ -51,7 +51,7 @@ ItemMenu &ItemMenu::setVisible(bool is_visible) {
     return *this;
 }
 
-Id ItemMenu::getId() const {
+id_t ItemMenu::getId() const {
     return m_id;
 }
 
@@ -59,11 +59,11 @@ void ItemMenu::_generateId() {
     m_id = generateId();
 }
 
-Id ItemMenu::getAccessLevel() const {
+ACCESS_LEVEL ItemMenu::getAccessLevel() const {
     return m_access_level;
 }
 
-ItemMenu &ItemMenu::setAccessLevel(Id access_level) {
+ItemMenu &ItemMenu::setAccessLevel(ACCESS_LEVEL access_level) {
     m_access_level = access_level;
 
     return *this;

@@ -5,7 +5,7 @@
 #include <vector>
 #include <iostream>
 
-#include "../globals/itemsID.h"
+#include "../globals/rolesID.h"
 #include "./ItemMenu.h"
 
 
@@ -22,7 +22,7 @@ public:
 
     ConsoleMenu &operator=(const ConsoleMenu &consoleMenu) = delete;
 
-    ConsoleMenu(Id access_level, string title, ListItem listItem);
+    ConsoleMenu(ACCESS_LEVEL access_level, string title, ListItem listItem);
 
     string getTitle() const;
 
@@ -38,15 +38,15 @@ public:
     // после неё обязательно нужно вызывать commit.
     // Сделана функция для того, чтобы удобно редактировать:
     // видимость, название и прочие поля эелемнта меню
-    ItemMenu *getItemForEditById(Id id_item);
+    ItemMenu *getItemForEditById(id_t id_item);
 
     ConsoleMenu &commit();
 
     friend std::ostream &operator<<(std::ostream &out, ConsoleMenu &consoleMenu);
 
-    Id getAccessLevel() const;
+    ACCESS_LEVEL getAccessLevel() const;
 
-    ConsoleMenu &setAccessLevel(Id access_level);
+    ConsoleMenu &setAccessLevel(ACCESS_LEVEL access_level);
 
     size_t getSelectItem() const;
 
@@ -55,7 +55,7 @@ private:
     ListItem m_lst_items{};
     size_t m_select_item{};
     ListItem m_visible_items{};
-    Id m_current_access_level{};
+    ACCESS_LEVEL m_current_access_level{};
 
     void _reinitVisibleItems();
 };

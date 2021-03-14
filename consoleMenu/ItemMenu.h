@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 
-#include "../globals/itemsID.h"
+#include "../globals/rolesID.h"
 
 
 using std::string;
@@ -19,7 +19,7 @@ public:
 
     ItemMenu() = delete;
 
-    ItemMenu(Id id, Id access_level, string title, PerformedFunc exe_func);
+    ItemMenu(id_t id, ACCESS_LEVEL access_level, string title, PerformedFunc exe_func);
 
     string getTitle() const;
 
@@ -35,18 +35,18 @@ public:
 
     ItemMenu &setVisible(bool is_visible);
 
-    Id getAccessLevel() const;
+    ACCESS_LEVEL getAccessLevel() const;
 
-    ItemMenu &setAccessLevel(Id access_level);
+    ItemMenu &setAccessLevel(ACCESS_LEVEL access_level);
 
-    Id getId() const;
+    id_t getId() const;
 
 private:
     string m_title{};
     PerformedFunc m_exe_func{};
     bool m_visible{};
-    Id m_id{};
-    Id m_access_level{};
+    id_t m_id{};
+    ACCESS_LEVEL m_access_level{};
 
     void _generateId();
 };

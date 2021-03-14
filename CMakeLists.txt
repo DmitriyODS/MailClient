@@ -17,6 +17,10 @@ include_directories(mail)
 
 include_directories(dbQuarry)
 
+include_directories(sqlite)
+
+add_subdirectory(sqlite)
+
 add_subdirectory(dbQuarry)
 
 add_subdirectory(mail)
@@ -31,4 +35,4 @@ add_subdirectory(myString)
 
 add_executable(lr2 main.cpp ${SOURCE_FILES})
 
-target_link_libraries(lr2 CMenu MyString App User Mail Db)
+target_link_libraries(lr2 CMenu MyString App User Mail Db SqLite)

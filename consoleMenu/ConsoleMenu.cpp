@@ -2,7 +2,7 @@
 #include "../globals/rolesID.h"
 
 
-ConsoleMenu::ConsoleMenu(Id access_level, string title, ConsoleMenu::ListItem listItem)
+ConsoleMenu::ConsoleMenu(ACCESS_LEVEL access_level, string title, ConsoleMenu::ListItem listItem)
         : m_current_access_level(access_level), m_title(std::move(title)), m_lst_items(std::move(listItem)) {
     if (m_title.empty()) {
         m_title = "Title Menu";
@@ -40,6 +40,8 @@ ConsoleMenu &ConsoleMenu::show(std::ostream &out) {
     }
 
     out << "\nSelect -> ";
+
+    return *this;
 }
 
 std::ostream &operator<<(std::ostream &out, ConsoleMenu &consoleMenu) {
@@ -57,7 +59,7 @@ void ConsoleMenu::_reinitVisibleItems() {
 
     for (auto item : m_lst_items) {
         if (item->isVisible() &&
-            (item->getAccessLevel() == m_current_access_level || m_current_access_level == ADMIN_USER)) {
+            (item->getAccessLevel() == m_current_access_level || m_current_access_level == ACCESS_LEVEL::ADMIN_USER)) {
             m_visible_items.push_back(item);
         }
     }
@@ -72,7 +74,7 @@ ConsoleMenu &ConsoleMenu::commit() {
     return *this;
 }
 
-ItemMenu *ConsoleMenu::getItemForEditById(Id id_item) {
+ItemMenu *ConsoleMenu::getItemForEditById(id_t id_item) {
     for (auto item : m_lst_items) {
         if (item->getId() == id_item) {
             return item;
@@ -82,11 +84,11 @@ ItemMenu *ConsoleMenu::getItemForEditById(Id id_item) {
     return nullptr;
 }
 
-Id ConsoleMenu::getAccessLevel() const {
+ACCESS_LEVEL ConsoleMenu::getAccessLevel() const {
     return m_current_access_level;
 }
 
-ConsoleMenu &ConsoleMenu::setAccessLevel(Id access_level) {
+ConsoleMenu &ConsoleMenu::setAccessLevel(ACCESS_LEVEL access_level) {
     m_current_access_level = access_level;
 
     return *this;
