@@ -23,13 +23,17 @@ public:
 
     App &operator=(const App &app) = delete;
 
+    App(string app_name, string app_ver);
+
+    int execution();
+
 private:
     string m_app_name{};
     string m_app_version{};
     MapUsers m_map_users{};
     ListMails m_lst_mails{};
     User *m_current_user{};
-    bool running{};
+    bool m_running{};
 
     void _init();
 };
