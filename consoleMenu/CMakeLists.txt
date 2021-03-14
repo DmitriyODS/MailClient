@@ -3,4 +3,6 @@ project(CMenu)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_library(CMenu ConsoleMenu.cpp ConsoleMenu.h ItemMenu.cpp ItemMenu.h)
+set(FILES ConsoleMenu.cpp ConsoleMenu.h ItemMenu.cpp ItemMenu.h)
+
+add_library(CMenu ${FILES})

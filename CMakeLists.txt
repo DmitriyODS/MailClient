@@ -5,8 +5,12 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(consoleMenu)
 
+include_directories(myString)
+
 add_subdirectory(consoleMenu)
+
+add_subdirectory(myString)
 
 add_executable(lr2 main.cpp)
 
-target_link_libraries(lr2 CMenu)
+target_link_libraries(lr2 CMenu MyString)
