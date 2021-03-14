@@ -3,6 +3,6 @@ project(Db)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(FILES ParsingInterface.h ParsingInterface.cpp DbTransaction.h DbTransaction.cpp)
+set(FILES ParsingInterface.h ParsingInterface.cpp Db.h Db.cpp dbCommand.h)
 
 add_library(Db ${FILES})
