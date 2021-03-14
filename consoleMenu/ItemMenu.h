@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 
+#include "../globals/itemsID.h"
+
 
 using std::string;
 
@@ -15,7 +17,9 @@ public:
 
     ItemMenu &operator=(const ItemMenu &itemMenu) = delete;
 
-    ItemMenu(string title, PerformedFunc exe_func);
+    ItemMenu() = delete;
+
+    ItemMenu(Id id, Id access_level, string title, PerformedFunc exe_func);
 
     string getTitle() const;
 
@@ -27,9 +31,24 @@ public:
 
     friend std::ostream &operator<<(std::ostream &out, const ItemMenu &itemMenu);
 
+    bool isVisible() const;
+
+    ItemMenu &setVisible(bool is_visible);
+
+    Id getAccessLevel() const;
+
+    ItemMenu &setAccessLevel(Id access_level);
+
+    Id getId() const;
+
 private:
     string m_title{};
     PerformedFunc m_exe_func{};
+    bool m_visible{};
+    Id m_id{};
+    Id m_access_level{};
+
+    void _generateId();
 };
 
 
