@@ -19,7 +19,7 @@ public:
 
     ItemMenu() = delete;
 
-    ItemMenu(id_t id, ACCESS_LEVEL access_level, string title, PerformedFunc exe_func);
+    ItemMenu(id_t id, AccessLevel access_level, string title, PerformedFunc exe_func);
 
     string getTitle() const;
 
@@ -35,9 +35,9 @@ public:
 
     ItemMenu &setVisible(bool is_visible);
 
-    ACCESS_LEVEL getAccessLevel() const;
+    AccessLevel getAccessLevel() const;
 
-    ItemMenu &setAccessLevel(ACCESS_LEVEL access_level);
+    ItemMenu &setAccessLevel(AccessLevel access_level);
 
     id_t getId() const;
 
@@ -46,7 +46,7 @@ private:
     PerformedFunc m_exe_func{};
     bool m_visible{};
     id_t m_id{};
-    ACCESS_LEVEL m_access_level{};
+    AccessLevel m_access_level{};
 
     void _generateId();
 };

@@ -5,17 +5,20 @@
 #include <string>
 #include <map>
 #include <vector>
+#include <stack>
 
 #include <User.h>
 #include <Mail.h>
+#include <ScreenInterface.h>
+#include <Context.h>
+#include <Intent.h>
 
 
 using std::string;
 
 class App {
 public:
-    using MapUsers = std::map<string, User *>;
-    using ListMails = std::vector<Mail *>;
+    using StackScreens = std::stack<ScreenInterface *>;
 
     App() = delete;
 
@@ -28,12 +31,9 @@ public:
     int execution();
 
 private:
-    string m_app_name{};
-    string m_app_version{};
-    MapUsers m_map_users{};
-    ListMails m_lst_mails{};
-    User *m_current_user{};
-    bool m_running{};
+    Context m_cntx{};
+    StackScreens m_stack_screens{};
+    ScreenInterface *m_current_screen{};
 
     void _init();
 };

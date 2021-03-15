@@ -4,7 +4,7 @@
 #include <iostream>
 
 
-enum class ACCESS_LEVEL : const id_t{
+enum class AccessLevel : const id_t{
         ADMIN_USER = 0x001,
         LOCAL_USER = 0x002
 };

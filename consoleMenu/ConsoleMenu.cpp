@@ -2,7 +2,7 @@
 #include "../globals/rolesID.h"
 
 
-ConsoleMenu::ConsoleMenu(ACCESS_LEVEL access_level, string title, ConsoleMenu::ListItem listItem)
+ConsoleMenu::ConsoleMenu(AccessLevel access_level, string title, ConsoleMenu::ListItem listItem)
         : m_current_access_level(access_level), m_title(std::move(title)), m_lst_items(std::move(listItem)) {
     if (m_title.empty()) {
         m_title = "Title Menu";
@@ -59,7 +59,7 @@ void ConsoleMenu::_reinitVisibleItems() {
 
     for (auto item : m_lst_items) {
         if (item->isVisible() &&
-            (item->getAccessLevel() == m_current_access_level || m_current_access_level == ACCESS_LEVEL::ADMIN_USER)) {
+            (item->getAccessLevel() == m_current_access_level || m_current_access_level == AccessLevel::ADMIN_USER)) {
             m_visible_items.push_back(item);
         }
     }
@@ -84,11 +84,11 @@ ItemMenu *ConsoleMenu::getItemForEditById(id_t id_item) {
     return nullptr;
 }
 
-ACCESS_LEVEL ConsoleMenu::getAccessLevel() const {
+AccessLevel ConsoleMenu::getAccessLevel() const {
     return m_current_access_level;
 }
 
-ConsoleMenu &ConsoleMenu::setAccessLevel(ACCESS_LEVEL access_level) {
+ConsoleMenu &ConsoleMenu::setAccessLevel(AccessLevel access_level) {
     m_current_access_level = access_level;
 
     return *this;

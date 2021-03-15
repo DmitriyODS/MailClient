@@ -3,7 +3,7 @@ project(lr2)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(SOURCE_FILES globals/itemsID.h globals/rolesID.h tools/tools.h tools/tools.cpp)
+set(SOURCE_FILES globals/itemsID.h globals/rolesID.h tools/tools.h tools/tools.cpp globals/screensID.h)
 
 include_directories(consoleMenu)
 
@@ -18,6 +18,10 @@ include_directories(mail)
 include_directories(dbQuarry)
 
 include_directories(sqlite)
+
+include_directories(screens)
+
+add_subdirectory(screens)
 
 add_subdirectory(sqlite)
 

@@ -22,7 +22,7 @@ public:
 
     ConsoleMenu &operator=(const ConsoleMenu &consoleMenu) = delete;
 
-    ConsoleMenu(ACCESS_LEVEL access_level, string title, ListItem listItem);
+    ConsoleMenu(AccessLevel access_level, string title, ListItem listItem);
 
     string getTitle() const;
 
@@ -44,9 +44,9 @@ public:
 
     friend std::ostream &operator<<(std::ostream &out, ConsoleMenu &consoleMenu);
 
-    ACCESS_LEVEL getAccessLevel() const;
+    AccessLevel getAccessLevel() const;
 
-    ConsoleMenu &setAccessLevel(ACCESS_LEVEL access_level);
+    ConsoleMenu &setAccessLevel(AccessLevel access_level);
 
     size_t getSelectItem() const;
 
@@ -55,7 +55,7 @@ private:
     ListItem m_lst_items{};
     size_t m_select_item{};
     ListItem m_visible_items{};
-    ACCESS_LEVEL m_current_access_level{};
+    AccessLevel m_current_access_level{};
 
     void _reinitVisibleItems();
 };
