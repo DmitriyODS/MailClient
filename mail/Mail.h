@@ -10,7 +10,7 @@
 
 using std::string;
 
-class Mail : ParsingInterface {
+class Mail : public ParsingInterface {
 public:
     Mail() = delete;
 

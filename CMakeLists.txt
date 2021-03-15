@@ -3,7 +3,7 @@ project(lr2)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(SOURCE_FILES globals/itemsID.h globals/rolesID.h tools/tools.h tools/tools.cpp globals/screensID.h)
+set(SOURCE_FILES globals/itemsID.h globals/rolesID.h tools/tools.h tools/tools.cpp globals/screensID.h globals/resApp.h)
 
 include_directories(consoleMenu)
 
@@ -39,4 +39,4 @@ add_subdirectory(myString)
 
 add_executable(lr2 main.cpp ${SOURCE_FILES})
 
-target_link_libraries(lr2 CMenu MyString App User Mail Db SqLite)
+target_link_libraries(lr2 CMenu MyString App User Mail Db SqLite Screens)

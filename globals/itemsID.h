@@ -5,7 +5,8 @@
 
 
 enum class ItemID : const id_t{
-        EXIT_APP = 0x0
+        EXIT_APP,
+        AUTH
 };
 
 #endif //LR2_ITEMSID_H
