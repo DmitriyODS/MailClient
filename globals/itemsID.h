@@ -3,10 +3,12 @@
 
 #include <iostream>
 
+#include "globalTypes.h"
 
-enum class ItemID : const id_t{
-        EXIT_APP,
-        AUTH
+
+enum class ItemID : id_t {
+    EXIT_APP,
+    AUTH
 };
 
 #endif //LR2_ITEMSID_H

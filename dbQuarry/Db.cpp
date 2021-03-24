@@ -1,9 +1,9 @@
 #include <iostream>
 #include <sqlite3.h>
-#include <unistd.h>
 
 #include "Db.h"
 #include "../tools/tools.h"
+#include "../globals/unistd.h"
 
 
 Db::Db(string root_dir, string name_stg)
@@ -26,7 +26,7 @@ void Db::_init() {
 
     m_root_dir = workdir;
 
-    if (chdir(m_root_dir.c_str())) {
+    if (chdir(reinterpret_cast<const char *>(m_root_dir.c_str()))) {
         err = fs::create_directory(workdir);
         if (err) {
             logger("Error, unable to change working directory!", LevelLog::criticalError);
@@ -73,6 +73,7 @@ bool Db::isConnect() const {
 
 Db &Db::saveObject(ParsingInterface &object) {
     //TODO: Сохранение объекта в БД
+    //TODO: Реализуется через вытягивание объекта ParseData (struct)
 
     return *this;
 }

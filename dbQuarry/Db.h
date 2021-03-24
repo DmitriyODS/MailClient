@@ -4,7 +4,6 @@
 #include <fstream>
 #include <string>
 #include <sqlite3.h>
-#include <experimental/filesystem>
 
 #include <ParsingInterface.h>
 
@@ -12,7 +11,17 @@
 using std::fstream;
 using std::string;
 
+#ifdef _WINDOWS
+
+#include <filesystem>
+
+namespace fs = std::filesystem;
+#else
+
+#include <experimental/filesystem>
+
 namespace fs = std::experimental::filesystem::v1;
+#endif
 
 class Db {
 public:

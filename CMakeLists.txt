@@ -3,7 +3,7 @@ project(lr2)
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(SOURCE_FILES globals/itemsID.h globals/rolesID.h tools/tools.h tools/tools.cpp globals/screensID.h globals/resApp.h)
+set(SOURCE_FILES globals/itemsID.h globals/rolesID.h tools/tools.h tools/tools.cpp globals/screensID.h globals/resApp.h globals/globalTypes.h globals/unistd.h)
 
 include_directories(consoleMenu)
 

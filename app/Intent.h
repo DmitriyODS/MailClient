@@ -13,7 +13,7 @@ using MapData = std::map<std::string, std::string>;
 enum class TypesAction : const id_t{
         CLOSE,
         OPEN_NEW,
-        OPEN_NEW_DATA
+        OPEN_NEW_CLOSE
 };
 
 //TODO: Возможно потом перепишется в класс

@@ -7,6 +7,8 @@
 
 #include <ParsingInterface.h>
 
+#include "../globals/globalTypes.h"
+
 
 using std::string;
 
@@ -18,9 +20,9 @@ public:
 
     Mail &operator=(const Mail &mail) = delete;
 
-    bool parseFromDb(ifstream &in_f) override;
+    bool parseFromDb() override;
 
-    bool parseInDb(ofstream &out_f) override;
+    bool parseInDb() override;
 
     Mail(string login_sender, string login_recipient, string title, string text);
 

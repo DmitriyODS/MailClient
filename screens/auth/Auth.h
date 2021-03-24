@@ -8,6 +8,8 @@ class Auth : public ScreenInterface {
 public:
     Auth() = default;
 
+    void render() const override;
+
     int runExec(Context *cntx) override;
 };
 

@@ -3,6 +3,8 @@
 
 #include <iostream>
 
+#include "globalTypes.h"
+
 
 enum class AccessLevel : const id_t{
         ADMIN_USER = 0x001,

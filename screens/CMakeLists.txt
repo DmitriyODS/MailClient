@@ -7,4 +7,6 @@ set(BASE_FILE ScreenInterface.h ScreenInterface.cpp)
 
 set(AUTH auth/Auth.cpp auth/Auth.h)
 
-add_library(Screens ${BASE_FILE} ${AUTH})
+set(LOGO logo/Logo.cpp logo/Logo.h)
+
+add_library(Screens ${BASE_FILE} ${AUTH} ${LOGO})

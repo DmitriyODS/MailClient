@@ -4,6 +4,8 @@
 #include <ctime>
 #include <string>
 
+#include "../globals/globalTypes.h"
+
 enum class LevelLog : const id_t{
         information,
         debag,

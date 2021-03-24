@@ -26,9 +26,9 @@ public:
             string password
     );
 
-    bool parseFromDb(ifstream &in_f) override;
+    bool parseFromDb() override;
 
-    bool parseInDb(ofstream &out_f) override;
+    bool parseInDb() override;
 
     id_t getAccessLevel() const;
 

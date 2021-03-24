@@ -30,10 +30,8 @@ void App::_processContext() {
             _openScreen();
             break;
         }
-        case TypesAction::OPEN_NEW_DATA: {
-            //TODO: Пока логика одинакова
-            // потом может быть будет какая - то валидация?
-            _openScreen();
+        case TypesAction::OPEN_NEW_CLOSE: {
+            _openScreen(true);
             break;
         }
         default: {
@@ -51,7 +49,10 @@ void App::_closeScreen() {
     }
 }
 
-void App::_openScreen() {
-    m_stack_screens.push(m_current_screen);
+void App::_openScreen(bool close_cur) {
+    if (!close_cur) {
+        m_stack_screens.push(m_current_screen);
+    }
+
     m_current_screen = m_map_screens.at(m_cntx.m_intent.parse_scrren);
 }

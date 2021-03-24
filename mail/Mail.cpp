@@ -1,6 +1,7 @@
 #include "Mail.h"
 
 #include "../tools/tools.h"
+#include "../globals/globalTypes.h"
 
 
 Mail::Mail(string login_sender, string login_recipient, string title, string text)
@@ -72,13 +73,13 @@ string Mail::getText() const {
     return m_text;
 }
 
-bool Mail::parseFromDb(ifstream &in_f) {
+bool Mail::parseFromDb() {
     //TODO:: Реализовать парсинг
 
     return false;
 }
 
-bool Mail::parseInDb(ofstream &out_f) {
+bool Mail::parseInDb() {
     //TODO:: Реализовать парсинг
 
     return false;

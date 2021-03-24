@@ -7,6 +7,8 @@
 class ScreenInterface {
 public:
     virtual int runExec(Context *cntx) = 0;
+
+    virtual void render() const = 0;
 };
 
 

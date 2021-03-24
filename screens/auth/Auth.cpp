@@ -11,3 +11,7 @@ int Auth::runExec(Context *cntx) {
 
     return 0;
 }
+
+void Auth::render() const {
+
+}

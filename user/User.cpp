@@ -92,13 +92,13 @@ void User::_restoreUser(id_t id_user, id_t access_level,
     m_password = password;
 }
 
-bool User::parseInDb(ofstream &out_f) {
+bool User::parseInDb() {
     //TODO:: Реализовать парсинг в БД
 
     return false;
 }
 
-bool User::parseFromDb(ifstream &in_f) {
+bool User::parseFromDb() {
     //TODO:: Реализовать парсинг из БД
 
     return false;
